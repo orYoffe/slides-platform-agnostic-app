@@ -20,12 +20,13 @@ ReactDOM.render(
 );
 
 if (module.hot) {
-  module.hot.accept("./presentation", () => {
-    const NextPresentation = require("./presentation").default;    ReactDOM.render(
-      <AppContainer errorReporter={CustomErrorReporter}>
-        <NextPresentation />
-      </AppContainer>,
-      document.getElementById("root"),
-    );
-  });
+console.log('---------module.hot--------', module.hot);
+  // module.hot.accept("./presentation", () => {
+  //   const NextPresentation = require("./presentation").default;    ReactDOM.render(
+  //     <AppContainer errorReporter={CustomErrorReporter}>
+  //       <NextPresentation />
+  //     </AppContainer>,
+  //     document.getElementById("root"),
+  //   );
+  // });
 }
